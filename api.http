@@ -1,0 +1,76 @@
+/*
+# Server API
+*/
+/*
+## Alerts
+*/
+GET http://localhost:8080/api/alert.json
+
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 128
+etag: W/"80-s+ePIButvFizH/pj/BIIsmEuGnE"
+date: Wed, 15 Nov 2023 19:02:15 GMT
+connection: close
+/*
+## Docs
+*/
+###
+# @name docs
+GET http://localhost:8080/api/docs.json
+
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 1965
+etag: W/"7ad-uev08RPtXC+1w+rxEaHPurzFR1g"
+date: Wed, 15 Nov 2023 19:02:16 GMT
+connection: close
+###
+# @ref docs
+# @name doc
+GET http://localhost:8080/api/docs/{{docs[0].id}}.json
+
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 371
+etag: W/"173-jO1CEMBJEOFt/fy4rPBZPuK0Wd8"
+date: Wed, 15 Nov 2023 19:02:17 GMT
+connection: close
+/*
+## Docs Read Count
+*/
+###
+# @name readDoc
+# @ref doc
+POST http://localhost:8080/api/docs/{{doc.id}}/read
+
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+date: Wed, 15 Nov 2023 19:02:18 GMT
+connection: close
+content-length: 0
+###
+# @forceRef readDoc
+# @ref doc
+GET http://localhost:8080/api/docs/{{doc.id}}.json
+
+
+HTTP/1.1 200  - OK
+x-powered-by: Express
+access-control-allow-origin: *
+content-type: application/json; charset=utf-8
+content-length: 371
+etag: W/"173-9Ms3WqtK9S7DkgOWu1tEPIZ8HAc"
+date: Wed, 15 Nov 2023 19:02:20 GMT
+connection: close

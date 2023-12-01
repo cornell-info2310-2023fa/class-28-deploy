@@ -1,0 +1,94 @@
+GET https://api.github.com/octocat HTTP/1.1
+Authorization: Bearer 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
+
+
+HTTP/1.1 200  - OK
+server: GitHub.com
+date: Wed, 15 Nov 2023 19:00:36 GMT
+content-type: application/octocat-stream
+content-length: 873
+x-github-api-version-selected: 2022-11-28
+x-ratelimit-limit: 5000
+x-ratelimit-remaining: 4999
+x-ratelimit-reset: 1700078436
+x-ratelimit-used: 1
+x-ratelimit-resource: core
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'
+vary: Accept-Encoding, Accept, X-Requested-With
+x-github-request-id: DDCA:9B23:2B51DE:599B7B:65551554
+connection: close
+###
+GET https://api.github.com/orgs/cornell-info2310-2023fa/repos HTTP/1.1
+Authorization: Bearer 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
+
+
+HTTP/1.1 200  - OK
+server: GitHub.com
+date: Wed, 15 Nov 2023 18:40:37 GMT
+content-type: application/json; charset=utf-8
+transfer-encoding: chunked
+cache-control: private, max-age=60, s-maxage=60
+vary: Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With
+etag: W/"9b5c9152eaa319b703a8e2558e81152cde93827869b4c2092d924bfa65e13c82"
+github-authentication-token-expiration: 2023-11-16 00:00:00 -0500
+x-github-media-type: github.v3; format=json
+x-accepted-github-permissions: metadata=read
+x-github-api-version-selected: 2022-11-28
+x-ratelimit-limit: 5000
+x-ratelimit-remaining: 4987
+x-ratelimit-reset: 1700074318
+x-ratelimit-used: 13
+x-ratelimit-resource: core
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'
+content-encoding: gzip
+x-github-request-id: D15A:5AF1:103D7F:21D868:655510A4
+connection: close
+###
+@repo = {{$input repo}}
+GET https://api.github.com/repos/cornell-info2310-2023fa/{{repo}}/contributors
+Authorization: Bearer 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
+
+
+HTTP/1.1 200  - OK
+server: GitHub.com
+date: Wed, 15 Nov 2023 18:47:47 GMT
+content-type: application/json; charset=utf-8
+transfer-encoding: chunked
+cache-control: private, max-age=60, s-maxage=60
+vary: Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With
+etag: W/"2a064f4cf1f1a96ba010164bed1bec06ca62f0795acbc49a828a6593f4616df6"
+last-modified: Mon, 13 Nov 2023 21:48:13 GMT
+github-authentication-token-expiration: 2023-11-16 00:00:00 -0500
+x-github-media-type: github.v3; format=json
+x-accepted-github-permissions: metadata=read
+x-github-api-version-selected: 2022-11-28
+x-ratelimit-limit: 5000
+x-ratelimit-remaining: 4983
+x-ratelimit-reset: 1700074318
+x-ratelimit-used: 17
+x-ratelimit-resource: core
+access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
+access-control-allow-origin: *
+strict-transport-security: max-age=31536000; includeSubdomains; preload
+x-frame-options: deny
+x-content-type-options: nosniff
+x-xss-protection: 0
+referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
+content-security-policy: default-src 'none'
+content-encoding: gzip
+x-github-request-id: AF2A:45AB:12DAF27:26B15C1:65551252
+connection: close
